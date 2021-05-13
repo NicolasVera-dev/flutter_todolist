@@ -10,7 +10,7 @@ class InputSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(30),
+      margin: EdgeInsets.fromLTRB(30, 15, 30, 10),
       child: Column(
         children: [
           Container(

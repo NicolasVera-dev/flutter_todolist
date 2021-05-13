@@ -23,6 +23,6 @@ Widget flutterIcon = Container(
         ),
       ],
     ),
-    child: Image.asset('images/firebase.png'),
+    child: Image.asset('images/chambersign.png'),
   ),
 );

@@ -18,7 +18,7 @@ Widget titleSection = Container(
       Text(
         'List',
         style: GoogleFonts.exo(
-            fontSize: 40, fontWeight: FontWeight.w900, color: Colors.red[400]),
+            fontSize: 40, fontWeight: FontWeight.w900, color: Colors.black),
       ),
     ],
   ),

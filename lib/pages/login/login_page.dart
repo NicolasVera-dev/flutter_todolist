@@ -13,7 +13,7 @@ class LoginPage extends StatelessWidget {
       home: Scaffold (
         appBar: AppBar(
           title: Text('Connexion'),
-          backgroundColor: Colors.amber,
+          backgroundColor: Colors.red,
         ),
         body : Container( 
           decoration: BoxDecoration(
@@ -21,9 +21,9 @@ class LoginPage extends StatelessWidget {
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: <Color>[
-                Colors.amber[300],
-                Colors.amber[700],
-                Colors.orange[900],
+                Colors.red[300],
+                Colors.red[700],
+                Colors.red[900],
               ],
             ),
           ),
