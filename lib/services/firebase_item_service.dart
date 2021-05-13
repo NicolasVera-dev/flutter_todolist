@@ -5,7 +5,7 @@ import 'firebase_auth_service.dart';
 void addItem(TextEditingController myController){
   try {
     var now = new DateTime.now();
-    var hourAndMinute = new DateFormat('HH:MM');
+    var hourAndMinute = new DateFormat('y-MM-d à HH:mm');
     databaseReference.collection('items').add({
       "text": myController.text,
       "time": hourAndMinute.format(now),
