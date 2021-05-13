@@ -1,8 +1,9 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 FirebaseAuth auth = FirebaseAuth.instance;
+FirebaseFirestore databaseReference = FirebaseFirestore.instance;
 
 void loginToFirebase(TextEditingController emailField, TextEditingController passwordField) {
   print(emailField);
@@ -24,3 +25,4 @@ void signOut() {
   print('Déconnexion...');
   auth.signOut();
 }
+

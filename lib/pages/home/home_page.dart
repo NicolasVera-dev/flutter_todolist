@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../services/firebase_auth_service.dart';
+import 'components/formSection_widget.dart';
+import 'components/listSection_widget.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -8,15 +10,25 @@ class HomePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Home Page'),
-        ),
-        body: Center(
-          child: ElevatedButton(
+          title: Text('TodoList'),
+          leading: IconButton(
+            icon: Icon(
+              Icons.logout,
+              color: Colors.white,
+            ),
             onPressed: () {
               signOut();
             },
-            child: Text('Déconnexion'),
           ),
+          backgroundColor: Colors.red,    
+        ),
+        body: Column(
+          children: [
+            FormSection(),
+            Expanded(
+              child: ListSection(),
+            )
+          ],
         ),
       ),
     );
